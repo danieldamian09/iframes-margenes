@@ -6,31 +6,136 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iframes Margenes</title>
+  <!-- Fonts -->
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
   <div class="container">
+    <!-- Header -->
     <div class="header">
       <img class="header__image" src="./assets/img/ganas-porque-ganas.png" alt="Ganas Porque Ganas">
     </div>
-    <div class="main">
-      <p class="main__title">Qué debes hacer para ganar en Mayo</p>
-      <div class="main__subtitle">
-        <p></p>
-        <p>Completa el desafío de tareas</p>
-        <p></p>
+    <!-- Title Task -->
+    <main class="main">
+      <section class="task">
+        <h3 class="task__title">Qué debes hacer para ganar en Mayo</h3>
+        <div class="task__subtitle">
+          <p></p>
+          <p>Completa el desafío de tareas</p>
+          <p></p>
+        </div>
+        <p class="task__text"><span>Es requisito obligatorio</span> cumplir este desafío para poder obtener los premios
+          de las
+          metas
+          del mes.</p>
+      </section>
+      <!-- Card Task -->
+      <div class="card__task">
+        <img class="card__image" src="./assets/img/desafio-tareas.png" alt="">
+        <h3 class="card__title">Desafío de tareas:</h3>
+        <p class="card__text">Haz tus actividades semanales</p>
       </div>
-      <p class="main__text">Es requisito obligatorio cumplir este desafío para poder obtener los premios de las metas
-        del mes.</p>
-    </div>
+      <!-- Title goals -->
+      <section class="goals">
+        <div class="goals__subtitle">
+          <p></p>
+          <p>Cumple tus metas del mes</p>
+          <p></p>
+        </div>
+        <p class="goals__text">
+          <span>Si cumples estas metas del mes acumularás premios.
+        </p>
+      </section>
+      <!-- Card Slider -->
+      <section class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- 1/3 -->
+            <div class="swiper-slide">
+              <!-- Card Buy -->
+              <div class="swiper__card">
+                <img class="swiper__image" src="./assets/img/meta-compras.png" alt="">
+                <h3 class="swiper__title">Meta de compras:</h3>
+                <p class="swiper__text">Cumple tu objetivo de compra mensua</p>
+                <p class="swiper__goal">Compra 8 paquetes</p>
+              </div>
+            </div>
+            <!-- 2/3 -->
+            <div class="swiper-slide">
+              <!-- Card Buy -->
+              <div class="swiper__card">
+                <img class="swiper__image" src="./assets/img/meta-1c1p.png" alt="">
+                <h3 class="swiper__title">Meta 1C1P</h3>
+                <p class="swiper__text">Coloca tus pedidos en 1 Clic 1 Pedido</p>
+                <p class="swiper__goal">Realiza 2 pedidos</p>
+              </div>
+            </div>
+            <!-- 3/3 -->
+            <div class="swiper-slide">
+              <!-- Card Buy -->
+              <div class="swiper__card swiper__card--bonus">
+                <img class="swiper__image" src="./assets/img/meta-bonus.png" alt="">
+                <h3 class="swiper__title swiper__title--bonus">Meta: ¡Bonus!</h3>
+                <p class="swiper__text swiper__text--bonnus">Compra marcas del mes</p>
+                <p class="swiper__goal swiper__goal--bonus">¿Quieres ganar más? Con estas marcas del mes podrás obtener cajetillas
+                  adicionales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </section>
+
+      <!-- Objectives Table -->
+      <section class="table">
+        <h3 class="table__title">Tabla de objetivos de Mayo</h3>
+      </section>
 
 
+
+    </main>
 
   </div>
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+
+    const mySwiper = () => {
+      const screenWidth = screen.width;
+      if (screenWidth > 768) {
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      } else {
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    }
+    mySwiper();
+  </script>
 </body>
 
 </html>
