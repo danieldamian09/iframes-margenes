@@ -17,12 +17,14 @@
 
 <body>
   <div class="container">
+
     <!-- Header -->
     <div class="header">
       <img class="header__image" src="./assets/img/ganas-porque-ganas.png" alt="Ganas Porque Ganas">
     </div>
     <!-- Title Task -->
     <main class="main">
+      <!-- Title -->
       <section class="task">
         <h3 class="task__title">Qué debes hacer para ganar en Mayo</h3>
         <div class="task__subtitle">
@@ -35,13 +37,13 @@
           metas
           del mes.</p>
       </section>
-      <!-- Card Task -->
+      <!-- Card Task Week -->
       <div class="card__task">
         <img class="card__image" src="./assets/img/desafio-tareas.png" alt="">
         <h3 class="card__title">Desafío de tareas:</h3>
         <p class="card__text">Haz tus actividades semanales</p>
       </div>
-      <!-- Title goals -->
+      <!-- Title goals month -->
       <section class="goals">
         <div class="goals__subtitle">
           <p></p>
@@ -83,7 +85,8 @@
                 <img class="swiper__image" src="./assets/img/meta-bonus.png" alt="">
                 <h3 class="swiper__title swiper__title--bonus">Meta: ¡Bonus!</h3>
                 <p class="swiper__text swiper__text--bonnus">Compra marcas del mes</p>
-                <p class="swiper__goal swiper__goal--bonus">¿Quieres ganar más? Con estas marcas del mes podrás obtener cajetillas
+                <p class="swiper__goal swiper__goal--bonus">¿Quieres ganar más? Con estas marcas del mes podrás obtener
+                  cajetillas
                   adicionales.</p>
               </div>
             </div>
@@ -91,20 +94,120 @@
           <div class="swiper-pagination"></div>
       </section>
 
-      <!-- Objectives Table -->
+      <!-- Objectives Table Current Month -->
       <section class="table">
         <h3 class="table__title">Tabla de objetivos de Mayo</h3>
+        <p class="table__subtitle">Estas son tus metas y tus avances hasta el momento</p>
+        <!-- Objective Task -->
+        <div class="table__objectives">
+          <!-- Task Objective Card -->
+          <div class="task__card">
+            <div class="task__grid">
+              <div class="task__img">
+                <img src="./assets//img/tabla-desafios-tareas.png" alt="Desafio Tareas">
+              </div>
+              <div class="task__content">
+                <p class="task__challenge">Desafío de tareas:</p>
+                <p class="task__detail">Realizar 2 tareas en el mes para cumplir este desafío.</p>
+                <p class="task__current">Ya has hecho <span class="task__value">1</span> <span>tarea</span></p>
+              </div>
+            </div>
+            <!-- line -->
+            <div class="task__line"></div>
+            <!-- Message -->
+            <div class="task__message">
+              <img src="./assets//img/candado.png" alt="candado">
+              <p>Para poder adquirir cualquier premio si o si debes completar el desafío de tareas.</p>
+            </div>
+          </div>
+          <!-- Buy Objective Card and 1C1P Objective Card -->
+          <div class="buy1C1P__grid">
+            <!-- Buy Objective Card -->
+            <div class="buy__card">
+              <p class="buy__title">Meta de compras:</p>
+              <p class="buy__subtitle">Comprar 8 paquetes</p>
+              <img src="./assets//img/tabla-desafios-compras.png" alt="Desafio Compras">
+              <!-- line -->
+              <div class="task__line task__line--red"></div>
+              <p class="buy__current">Has comprado</p>
+              <p class="buy__current"><span> 3</span> <span>paquetes</span></p>
+            </div>
+            <!-- 1C1P Objective Card -->
+            <div class="buy__card">
+              <p class="buy__title">Meta 1C1P:</p>
+              <p class="buy__subtitle">Realizar 2 pedidos</p>
+              <img src="./assets//img/tabla-desafios-meta1C1P.png" alt="Desafio Compras">
+              <!-- line -->
+              <div class="task__line task__line--red"></div>
+              <p class="buy__current">Has hecho</p>
+              <p class="buy__current"> <span>1</span> <span> pedido en 1C1P</span></p>
+            </div>
+          </div>
+          <!-- Goals Bonus -->
+          <div class="goals__bonus">
+            <p class="goals__title">¡BONUS! Meta: Marcas del mes</p>
+            <p class="goals__details">Compra al menos 3 cajetillas de cada una de estas marcas del mes, en una sola
+              compra, y recibe más premios</p>
+            <div class="grid__box">
+              <!-- box 1 -->
+              <div class="box">
+                <div class="box__img">
+                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
+                  <div><span>X3</span></div>
+                  <p class="box__name">Benson & Hedges</p>
+                </div>
+              </div>
+              <!-- box 2 -->
+              <div class="box">
+                <div class="box__img">
+                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
+                  <div><span>X3</span></div>
+                  <p class="box__name">Benson & Hedges</p>
+                </div>
+              </div>
+              <!-- box 3 -->
+              <div class="box">
+                <div class="box__img">
+                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
+                  <div><span>X3</span></div>
+                  <p class="box__name">Benson & Hedges</p>
+                </div>
+              </div>
+              <!-- box 4 -->
+              <div class="box">
+                <div class="box__img">
+                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
+                  <div><span>X3</span></div>
+                  <p class="box__name">Benson & Hedges</p>
+                </div>
+              </div>
+              <!-- box 5 -->
+              <div class="box">
+                <div class="box__img">
+                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
+                  <div><span>X3</span></div>
+                  <p class="box__name">Benson & Hedges</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Message Table -->
+          <div class="mesaage__table">
+            <img class="message__imgen" src="./assets/img/message-img.png" alt="Atención Mensaje">
+            <p class="message__text">Recuerda: para poder adquirir cualquier premio si o si debes completar el
+              <span>desafío de tareas</span>.</p>
+          </div>
+        </div>
       </section>
 
-
+      <!-- Message Prize -->
+      <section class="prize">
+        <p class="message__prize">¿Quieres saber cuales son tus premios hasta ahora? </p>
+        <a href="#" class="message_buttom"> <img src="./assets/img/start.png" alt=""> Ver mi tabla de premios</a>
+      </section>
 
     </main>
-
   </div>
-
-
-
-
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
