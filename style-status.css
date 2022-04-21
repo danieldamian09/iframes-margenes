@@ -1,0 +1,244 @@
+:root {
+	--font: "Rubik", sans-serif;
+	--backgrondMain: #f5f5f5;
+	--gray: #444444;
+	--white: #ffffff;
+	--red: #df0021;
+	--lightgrey: #9b9b9b;
+	--end: #3eb22b;
+	--start: #e2e2e2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container__status {
+	width: 100%;
+	margin: 0 auto;
+	background-color: var(--backgrondMain);
+	font-family: var(--font);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.status {
+	width: 100%;
+	max-width: 375px;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 0.8fr 3fr;
+	margin: 10px auto;
+	padding: 0.5rem;
+}
+
+.header p {
+	font-size: 21px;
+	font-weight: bold;
+	color: var(--gray);
+}
+
+.advance {
+	background-color: var(--white);
+	width: 95%;
+	max-width: 343px;
+	margin: 0 auto;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.advance__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.advance__tile {
+	color: var(--gray);
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 21px;
+}
+
+.advance__detail {
+	text-align: center;
+	font-size: 12px;
+	color: var(--gray);
+	font-weight: 400;
+	margin: 6px auto 25px;
+	width: 95%;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.box__buy,
+.box__1C1P,
+.box__more {
+	width: 95%;
+	border: solid 2px var(--red);
+	margin-top: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.box__more{
+  margin-bottom: 1rem;
+}
+
+.box__title {
+	color: var(--lightgrey);
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.box__iconos {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 27px;
+}
+
+.icono {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Clase para el estado inical del Desafio Tareas y Meta de Compras */
+.icon__task {
+	background-color: var(--start);
+	width: 49px;
+	height: 49px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: relative;
+}
+
+/* clase una vez logrado el Desafio Tareas y Meta de Compras */
+.icon__task-end {
+	background-color: var(--end);
+}
+
+/* Clase para el estado inical de Checked */
+.checked {
+	display: none;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+}
+
+/*  Clase para el estado final de Checked */
+.checked-end {
+	display: inline-block;
+}
+
+.icon__text {
+	margin-top: 5px;
+	font-size: 10px;
+	color: var(--gray);
+	width: 90%;
+	text-align: center;
+}
+
+/* Clase para el estado inical del Premio */
+.prize {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+/* clase una vez logrado el Premio */
+.prize-end {
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
+
+/* Clase para el estado inical del Texto Premio */
+.icon__prize {
+	font-size: 12px;
+	width: 90%;
+	text-align: center;
+	color: var(--gray);
+	margin-top: 5px;
+	font-weight: 700;
+}
+/* clase una vez logrado el Texto Premio */
+.icon__prize-end {
+	color: var(--red);
+}
+
+.box__button {
+	all: unset;
+	margin: 29px auto 5px;
+	color: var(--red);
+	font-size: 11px;
+	font-weight: 500;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.box__message {
+	margin: 20px auto 0;
+}
+
+.box__message p {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--gray);
+}
+
+.closing{
+  width: 90%;
+  margin: 13px auto;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.message_buttom{
+	all: unset;
+  text-align: center;
+	width: 100%;
+	padding: 15px;
+	background: var(--red);
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	color: var(--white);
+	font-size: 19px;
+	cursor: pointer;
+  font-weight: 500;
+}
+
