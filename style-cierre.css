@@ -201,7 +201,7 @@
 }
 
 .objective__title {
-	margin: 15px 0 25px;
+	margin: 15px 0;
 }
 
 .objective__title p {
@@ -209,6 +209,61 @@
 	font-size: 15px;
 	line-height: 18px;
 	color: #444444;
+}
+
+.task,
+.buy,
+.oneClick,
+.marks {
+	display: flex;
+	width: 90%;
+	margin: 0 auto 5px;
+	height: 70px;
+	border-bottom: solid 1px #eeeeee;
+}
+
+.task__column {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	align-items: center;
+	width: 100%;
+}
+
+.status__icon {
+	width: 24px;
+	height: 24px;
+}
+
+.status__text {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+	color: var(--red);
+}
+
+.task__valu,
+.task__text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #797979;
+}
+
+.task__valu {
+	text-align: center;
+}
+
+/* Clase para modificar el status de los Objectives Objective Month Final */
+.status__icon-modifier path {
+	fill: #3eb22b;
+}
+
+.status__text-modifier {
+	color: #3eb22b;
+}
+
+.objective__table div:last-of-type{
+	border: none;
 }
 
 .record {
