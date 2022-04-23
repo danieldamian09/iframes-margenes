@@ -44,7 +44,7 @@
 .header p {
 	font-size: 12px;
 	font-weight: 400;
-	color: var(--graylight);
+	color: #9B9B9B;
 	letter-spacing: 0.09em;
 	text-align: center;
 }
