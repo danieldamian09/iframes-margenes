@@ -22,6 +22,9 @@
 	box-sizing: border-box;
 }
 
+p {
+	margin-bottom: 0 !important;
+}
 
 /* final info */
 
@@ -286,17 +289,27 @@
 	margin-bottom: 15px;
 }
 
+/* Estado Condicional INICIAL para la Card Desafio de tareas */
 .task__card {
 	width: 95%;
 	max-width: 309px;
 	margin: 17px auto;
-	background: #fff0d9;
+	background: #e3ecea;
 	padding: 25px 0;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+}
+/* Estado Condicional PROCESO para la Card Desafio de tareas  */
+.task__card-process {
+	background-color: #fff0d9;
+}
+
+/* Estado Condicional REALIZADO para la Card Desafio de tareas  */
+.task__card-effective {
+	background-color: #effbed;
 }
 
 .task__grid {
@@ -306,47 +319,163 @@
 	gap: 5px;
 }
 
-.task__img {
+/* Estado Condicional INICIAL para el Circulo del Icono Card Desafio de tareas */
+.task__circle {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 77px;
-	height: 77px;
-	background-color: #FFF0D9;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	background-color: #e3ecea;
 	border-radius: 50%;
-	border: solid 4px #F79429;
+	border: solid 4px #b9d5ee;
 }
 
+/* Estado Condicional PROCESO para el Circulo del Icono Card Desafio de tareas */
+.task__circle-process {
+	background-color: #fff0d9;
+	border-color: #f79429;
+	border-left-color: transparent;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+/* Estado Condicional REALIZADO para el Circulo del Icono Card Desafio de tareas */
+.task__circle-effective {
+	background-color: #effbed;
+	border-color: #3eb22b;
+}
+
+/* Estado Condicional PROCESO para el Icono de Card Desafio de tareas */
+.task__img-process path {
+	stroke: #f79429;
+}
+
+/* Estado Condicional REALIZADO para el Icono de Card Desafio de tareas */
+.task__img-effective path {
+	stroke: #3eb22b;
+}
+
+/* Estado Condicional PROCESO para ROTAR LA IMAGEN Y SIMULAR EN PROCESO de Card Desafio de tareas */
+.task__img-process {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}
+
+/*! Estado Condicional PROCESO para el Icono de Card Desafio de tareas DIFERENTE POR EL SVG */
+.task__imgDiferent-process path {
+	fill: #f79429;
+}
+
+/*! Estado Condicional REALIZADO para el Icono de Card Desafio de tareas DIFERENTE POR EL SVG */
+.task__imgDiferent-effective path {
+	fill: #3eb22b;
+}
+
+/*! Estado Condicional PROCESO para el Icono de Card Desafio de tareas DIFERENTE POR EL SVG  */
+.task__imgDiferent-process {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}
+
+/* Estado Condicional INICIAL para el texto de Card Desafio de tareas */
 .task__challenge {
 	font-size: 15px;
-	color: var(--orange);
+	color: #91b7d9;
 	font-weight: 600;
 }
 
+/* Estado Condicional PROCESO para el texto de Card Desafio de tareas */
+.task__challenge-process {
+	color: #f79429;
+}
+
+/* Estado Condicional REALIZADO para el texto de Card Desafio de tareas */
+.task__challenge-effective {
+	color: #3eb22b;
+}
+
+/* Estado Condicional INICIAL para Felicitaciones de Card Desafio de tareas */
+.task__congratulations {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 14px;
+	color: #3eb22b;
+	margin: 5px auto;
+	display: none;
+}
+
+/* Estado Condicional REALIZADO para Felicitaciones de Card Desafio de tareas */
+.task__congratulations-effective {
+	display: block;
+}
+
+/* Estado Condicional INICIAL para el Detalle de Card Desafio de tareas */
 .task__detail {
 	width: 90%;
 	font-size: 12px;
-	color: var(--orange);
+	color: #91b7d9;
 	font-weight: 400;
 	margin-top: 5px;
 }
 
+/* Estado Condicional PROCESO para el Detalle de Card Desafio de tareas */
+.task__detail-process {
+	color: #f79429;
+}
+
+/* Estado Condicional REALIZADO para el Detalle de Card Desafio de tareas */
+.task__detail-effective {
+	display: none;
+}
+
+/* Estado Condicional INICIAL para el Valor de Card Desafio de tareas */
 .task__current {
 	font-size: 12px;
-	color: var(--gray);
+	color: #91b7d9;
 	font-weight: 400;
 	margin-top: 10px;
 }
+/* Estado Condicional PROCESO para el Valor de Card Desafio de tareas */
+.task__current-process {
+	color: #444444;
+}
 
-.task__current span {
+/* Estado Condicional REALIZADO para el Valor de Card Desafio de tareas */
+.task__current-effective {
+	color: #444444;
+}
+
+/*! Estado Condicional INICIAL para el Numero realizado de Card Desafio de tareas */
+.task__value {
 	font-weight: 600;
 }
 
-.task__line {
+/* Estado Condicional INICIAL para Linea  de Card Desafio de tareas */
+.task__line,
+.oneClick__line {
 	width: 80%;
 	height: 1px;
-	background-color: var(--colorLine);
+	background-color: #b9d5ee;
 	margin: 20px auto;
+}
+/* Estado Condicional PROCESO para Linea  de Card Desafio de tareas */
+.task__line-process {
+	background-color: #f79429;
+}
+/* Estado Condicional REALIZADO para Linea  de Card Desafio de tareas */
+.task__line-effective {
+	background-color: #3eb22b;
 }
 
 .task__message {
@@ -363,6 +492,8 @@
 	font-weight: 600;
 }
 
+/* Seccion Meta de Compras Meta 1C1P*/
+
 .buy1C1P__grid {
 	width: 95%;
 	display: grid;
@@ -372,10 +503,12 @@
 	margin-bottom: 20px;
 }
 
-.buy__card {
+/* Estado Condicional INICIAL para la Card Meta de Compras*/
+.buy__card,
+.oneClick__card {
 	width: 95%;
 	max-width: 151px;
-	background: #ffe5e5;
+	background: #e3ecea;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -388,42 +521,120 @@
 	-o-border-radius: 5px;
 }
 
+/* Estado Condicional PROCESO para la Card Meta de Compras*/
+.buy__card-process,
+.oneClick__card-process {
+	background: #fff0d9;
+}
+
+/* Estado Condicional REALIZADO para la Card Meta de Compras*/
+.buy__card-effective,
+.oneClick__card-effective {
+	background: #effbed;
+}
+
 @media (min-width: 768px) {
 	.buy__card {
 		width: 100%;
 	}
 }
 
-.buy__title {
+/* Estado Condicional INICIAL para El Titulo Card Meta de Compras*/
+.buy__title,
+.oneClick__title {
 	font-size: 14px;
 	font-weight: 600;
-	color: var(--red);
+	color: #91b7d9;
 	text-align: center;
 }
 
-.buy__subtitle {
+/* Estado Condicional PROCESO para El Titulo Card Meta de Compras*/
+.buy__title-process,
+.oneClick__title-process {
+	color: #df0021;
+}
+
+/* Estado Condicional REALIZADO para El Titulo Card Meta de Compras*/
+.buy__title-effective,
+.oneClick__title-effective {
+	color: #444444;
+}
+
+/* Estado Condicional INICIAL para El Subtitulo Card Meta de Compras*/
+.buy__subtitle,
+.oneClick__subtitle {
 	font-size: 11px;
 	font-weight: 400;
-	color: var(--red);
+	color: #91b7d9;
+	margin-bottom: 14px;
 }
 
-.buy__card img {
-	margin: 20px auto 0;
+/* Estado Condicional PROCESO para El Subtitulo Card Meta de Compras*/
+.buy__subtitle-process,
+.oneClick__subtitle-process {
+	color: #df0021;
 }
 
-.task__line--red {
-	background-color: #f4c7cb;
+/* Estado Condicional REALIZADO para El Subtitulo Card Meta de Compras*/
+.buy__subtitle-effective,
+.oneClick__subtitle-effective {
+	color: #444444;
 }
 
-.buy__current {
+/* Estado Condicional INICIAL para Linea Card Meta de Compras*/
+.oneclick__line--start {
+	background-color: #91b7d9;
+}
+
+/* Estado Condicional PROCESO para Linea Card Meta de Compras*/
+.oneClick__line--process {
+	background-color: #df0021;
+}
+
+/* Estado Condicional REALIZADO para Linea Card Meta de Compras*/
+.oneClick__line--effective {
+	display: none;
+}
+
+/* Estado Condicional INICIAL para Valor Card Meta de Compras*/
+.buy__current,
+.oneClick__current {
 	font-size: 11px;
-	/* width: 55%; */
 	color: var(--gray);
 	text-align: center;
 }
 
-.buy__current span {
+.buy__value,
+.oneClick__current {
 	font-weight: 600;
+}
+
+/* Estado Condicional REALIZADO para Valor Card Meta de Compras*/
+.buy__current-effective,
+.oneClick__current-effective {
+	display: none;
+}
+.buy__value-effective,
+.oneClick__value-effective {
+	display: none;
+}
+
+/* Estado Condicional INICIAL para Felicitaciones Card Meta de Compras*/
+.buy__congratulations,
+.oneClick__congratulations {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 12px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	color: #3eb22b;
+	display: none;
+}
+
+/* Estado Condicional REALIZADO para Felicitaciones Card Meta de Compras*/
+.buy__congratulations-effective {
+	display: block;
+	margin: 6.5px auto;
 }
 
 .goals__container {
@@ -472,7 +683,7 @@
 	max-width: 218px;
 }
 
-.grid__box{
+.grid__box {
 	margin: 15px auto;
 	display: flex;
 	gap: 1rem;
@@ -481,17 +692,17 @@
 	align-items: center;
 }
 
-.box__img{
+.box__img {
 	position: relative;
 }
 
-.box__img div{
+.box__img div {
 	position: absolute;
 	top: -5px;
 	right: -5px;
 }
 
-.box__img span{
+.box__img span {
 	height: 20px;
 	width: 20px;
 	padding: 5px;
@@ -508,15 +719,135 @@
 	-o-border-radius: 50%;
 }
 
-.box__name{
+.box__name {
 	font-size: 11px;
-	color: #ACACAC;
+	color: #acacac;
 	font-weight: 400;
 	text-align: center;
 	max-width: 73px;
 }
 
-.mesaage__table{
+.goals__button {
+	all: unset;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	text-decoration-line: underline;
+	color: #df0021;
+	cursor: pointer;
+}
+
+.modal-dialog {
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+.modal-detail {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 18px auto 20px;
+}
+
+.modal_title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 12px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	color: #df0021;
+}
+
+.modal_text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	color: #797979;
+	width: 90%;
+	margin-top: 11px;
+}
+
+.modal-grid {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: repeat(5, 50px);
+	justify-items: start;
+	align-items: center;
+	margin-top: 20px;
+	grid-gap: 0.7rem;
+	width: 80%;
+}
+
+.grid-header p {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 10px;
+	color: #444444;
+	text-align: center;
+}
+
+.grid-row2,
+.grid-row3,
+.grid-row4,
+.grid-row5 {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 0.5px solid #e6e6e6;
+}
+
+.grid-row2 p,
+.grid-row3 p,
+.grid-row4 p,
+.grid-row5 p {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 10px;
+	text-align: center;
+	color: #767676;
+}
+
+.modal-message {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 10px;
+	text-align: center;
+	color: #9b9b9b;
+	margin-top: 25px;
+}
+
+.modal-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 18px;
+}
+
+.modal-close button{
+	all: unset;
+	width: 109px;
+	background-color:#DF0021;
+	color: #FFFFFF;
+	padding: 12px 14px;
+	text-align: center;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	cursor: pointer;
+}
+
+.mesaage__table {
 	margin: 20px auto;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
@@ -524,19 +855,19 @@
 	align-items: center;
 }
 
-.message__text{
+.message__text {
 	font-size: 11px;
-	color:var(--gray);
+	color: var(--gray);
 	font-weight: 400;
 	text-align: left;
 	width: 95%;
 }
 
-.message__text span{
+.message__text span {
 	font-weight: 600;
 }
 
-.prize{
+.prize {
 	max-width: 289px;
 	display: flex;
 	flex-direction: column;
@@ -545,7 +876,7 @@
 	margin-bottom: 20px;
 }
 
-.message__prize{
+.message__prize {
 	text-align: center;
 	font-size: 12px;
 	color: var(--gray);
@@ -553,14 +884,19 @@
 	margin-bottom: 10px;
 }
 
-.message_buttom{
+.message_buttom {
 	all: unset;
 	width: 90%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	padding: 15px;
-	background: linear-gradient(90deg, #DF0021 0%, #FF8E13 101.46%, #E80022 101.46%);
+	background: linear-gradient(
+		90deg,
+		#df0021 0%,
+		#ff8e13 101.46%,
+		#e80022 101.46%
+	);
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -570,4 +906,3 @@
 	font-size: 17px;
 	cursor: pointer;
 }
-

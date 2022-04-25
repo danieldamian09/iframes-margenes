@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
 </head>
 
 <body>
@@ -68,7 +71,33 @@
                 <p class="icon__prize">Premio de compras</p>
               </div>
             </div>
-            <button class="box__button">¿Cuál es el premio?</button>
+            <!-- Modal -->
+            <div class="goals__action">
+              <!-- Button trigger modal -->
+              <button class="goals__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                ¿Cuál es el premio?
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-detail">
+                      <p class="modal_title">Premio de compras</p>
+                      <p class="modal_text">Qué ganarás si cumples esta meta</p>
+                      <div class="modal-box">
+                        <img src="./assets/img/cajetilla.png" alt="">
+                        <p class="box-text">4 cajetillas de cigarrillos.</p>
+                      </div>
+                    </div>
+                    <div class="modal-close">
+                      <button type="button" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!--Box  2 -->
           <div class="box__1C1P">
@@ -107,7 +136,36 @@
                 <p class="icon__prize">Premio de 1C1P</p>
               </div>
             </div>
-            <button class="box__button">¿Cuál es el premio?</button>
+            <!-- Modal -->
+            <div class="goals__action">
+              <!-- Button trigger modal -->
+              <button class="goals__button" data-bs-toggle="modal" data-bs-target="#modalDos">
+                ¿Cuál es el premio?
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="modalDos" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-detail">
+                      <p class="modal_title">Premio de 1C1P</p>
+                      <p class="modal_text">Qué ganarás si cumples esta meta</p>
+                      <div class="modal-box">
+                        <img src="./assets/img/cajetilla.png" alt="">
+                        <p class="box-text">Cada 10 paquetes obtendrás 1 cajetilla libre de cargo</p>
+                        <p class="box-detail-first">Por ejemplo:</p>
+                        <p class="box-detail">10 paquetes = 1 cajetilla libre de cargo</p>
+                        <p class="box-detail">20 paquetes = 2 cajetillas libre de cargo</p>
+                      </div>
+                    </div>
+                    <div class="modal-close">
+                      <button type="button" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Text ¿Quieres ganar más? -->
           <div class="box__message">
@@ -150,7 +208,67 @@
                 <p class="icon__prize">Premio Bonus</p>
               </div>
             </div>
-            <button class="box__button">¿Cuál es el premio?</button>
+            <!-- Modal -->
+            <div class="goals__action">
+              <!-- Button trigger modal -->
+              <button class="goals__button" data-bs-toggle="modal" data-bs-target="#modalTres">
+                ¿Cuál es el premio?
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="modalTres" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-detail">
+                      <p class="modal_title-extra">¡Premio Extra!</p>
+                      <p class="modal_text-extra">Recuerda que debes comprar al menos 3 cajetillas de cada marca en una sola compra para ganar</p>
+                      <div class="modal-grid">
+                        <!-- Row Header -->
+                        <div class="grid-header">
+                          <p>Comprando</p>
+                        </div>
+                        <div class="grid-header">
+                          <p>Tu ganas...</p>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="grid-row2">
+                          <img src="./assets/img/dos-cajetillas.png" alt="Dos cajetillas">
+                        </div>
+                        <div class="grid-row2">
+                          <p>2 cajetillas</p>
+                        </div>
+                        <!-- Row 3 -->
+                        <div class="grid-row3">
+                          <img src="./assets/img/tres-cajetillas.png" alt="Tres cajetillas">
+                        </div>
+                        <div class="grid-row3">
+                          <p>3 cajetillas</p>
+                        </div>
+                        <!-- Row 4 -->
+                        <div class="grid-row4">
+                          <img src="./assets/img/cuatro-cajetillas.png" alt="Cuatro cajetillas">
+                        </div>
+                        <div class="grid-row3">
+                          <p>4 cajetillas</p>
+                        </div>
+                        <!-- Row 5 -->
+                        <div class="grid-row4">
+                          <img src="./assets/img/cinco-cajetillas.png" alt="Cinco cajetillas">
+                        </div>
+                        <div class="grid-row3">
+                          <p>5 cajetillas</p>
+                        </div>
+                      </div>
+                      <p class="modal-message">*Premio topado a 5 marcas al mes</p>
+                    </div>
+                    <div class="modal-close">
+                      <button type="button" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -162,6 +280,10 @@
     </main>
   </div>
 
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
