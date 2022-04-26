@@ -1956,3 +1956,70 @@ Estado en el CSS linea 257-263
 	color: #3eb22b;
 }
 ```
+
+# Archivo final-no-ganaste.html
+
+## Detalle
+
+## Encabezado Mes
+
+## Linea 23 Mes campo dinámico:
+
+```html
+<!--! Campo Dinamico  -->
+<p>TU CIERRE DEL MES: <span class="current__month">MAYO</span></p>
+```
+
+## ¿Qué objetivos cumpliste este mes?
+
+### Linea 57, 78, 99, 120 SVG de Checked estado condicional:
+
+```html
+<!--! Estado Condicional -->
+<svg
+	class="status__icon "
+	width="20"
+	height="20"
+	viewBox="0 0 20 20"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<path
+		d="M10 20C4.48 19.994 0.006 15.52 0 10V9.80002C0.11 4.30502 4.635 -0.0719788 10.13 2.11848e-05C15.627 0.0740212 20.034 4.56902 19.998 10.065C19.962 15.562 15.497 20 10 20ZM5.41 9.59002L4 11L8 15L16 7.00002L14.59 5.58002L8 12.17L5.41 9.59002Z"
+		fill="#df0021"
+	/>
+</svg>
+```
+
+Estado en el CSS linea 257-263
+
+```css
+/* Clase para modificar el status de los Objectives Objective Month Final */
+.status__icon-modifier path {
+	fill: #3eb22b;
+}
+
+.status__text-modifier {
+	color: #3eb22b;
+}
+```
+
+### Linea 64, 85, 106, 127 Texto estado condicional:
+
+```html
+<!--! Estado Condicional -->
+<p class="status__text">Desafío de tareas</p>
+```
+
+Estado en el CSS linea 257-263
+
+```css
+/* Clase para modificar el status de los Objectives Objective Month Final */
+.status__icon-modifier path {
+	fill: #3eb22b;
+}
+
+.status__text-modifier {
+	color: #3eb22b;
+}
+```
