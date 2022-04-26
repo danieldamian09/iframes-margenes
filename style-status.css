@@ -135,7 +135,7 @@ p {
 	align-items: center;
 }
 
-/* Clase para el estado inical del Desafio Tareas y Meta de Compras */
+/* Clase para el estado INICIAL del Desafio Tareas y Meta de Compras */
 .icon__task {
 	background-color: var(--start);
 	width: 49px;
@@ -148,12 +148,12 @@ p {
 	position: relative;
 }
 
-/* clase una vez logrado el Desafio Tareas y Meta de Compras */
+/* clase una vez REALIZADO el Desafio Tareas y Meta de Compras */
 .icon__task-end {
 	background-color: var(--end);
 }
 
-/* Clase para el estado inical de Checked */
+/* Clase para el estado INICIAL de Checked */
 .checked {
 	display: none;
 	position: absolute;
@@ -161,7 +161,7 @@ p {
 	right: -2px;
 }
 
-/*  Clase para el estado final de Checked */
+/*  Clase para el estado REALIZADO de Checked */
 .checked-end {
 	display: inline-block;
 }
@@ -174,19 +174,19 @@ p {
 	text-align: center;
 }
 
-/* Clase para el estado inical del Premio */
+/* Clase para el estado INICIAL del Premio */
 .prize {
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 }
 
-/* clase una vez logrado el Premio */
+/* clase una vez REALIZADO el Premio */
 .prize-end {
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
 }
 
-/* Clase para el estado inical del Texto Premio */
+/* Clase para el estado INICIAL del Texto Premio */
 .icon__prize {
 	font-size: 12px;
 	width: 90%;
@@ -195,7 +195,7 @@ p {
 	margin-top: 5px;
 	font-weight: 700;
 }
-/* clase una vez logrado el Texto Premio */
+/* clase una vez REALIZADO el Texto Premio */
 .icon__prize-end {
 	color: var(--red);
 }

@@ -30,7 +30,8 @@
     <main class="main">
       <!-- Title -->
       <section class="task">
-        <h3 class="task__title">Qué debes hacer para ganar en Mayo</h3>
+        <!--!Campo Dinamico current__month -->
+        <h3 class="task__title">Qué debes hacer para ganar en <span class="current__month">Mayo</span></h3>
         <div class="task__subtitle">
           <p></p>
           <p>Completa el desafío de tareas</p>
@@ -69,7 +70,8 @@
                 <img class="swiper__image" src="./assets/img/meta-compras.png" alt="cesta">
                 <h3 class="swiper__title">Meta de compras:</h3>
                 <p class="swiper__text">Cumple tu objetivo de compra mensua</p>
-                <p class="swiper__goal">Compra 8 paquetes</p>
+                <!--! Campo Dinamico  -->
+                <p class="swiper__goal">Compra <span class="current__buy">8</span> paquetes</p>
               </div>
             </div>
             <!-- 2/3 -->
@@ -79,7 +81,8 @@
                 <img class="swiper__image" src="./assets/img/meta-1c1p.png" alt="carrito">
                 <h3 class="swiper__title">Meta 1C1P</h3>
                 <p class="swiper__text">Coloca tus pedidos en 1 Clic 1 Pedido</p>
-                <p class="swiper__goal">Realiza 2 pedidos</p>
+                <!--! Campo Dinamico  -->
+                <p class="swiper__goal">Realiza <span class="current__oneClick">2</span> pedidos</p>
               </div>
             </div>
             <!-- 3/3 -->
@@ -100,7 +103,8 @@
 
       <!-- Objectives Table Current Month -->
       <section class="table__container">
-        <h3 class="table__title">Tabla de objetivos de Mayo</h3>
+        <!--! Campo dinamico  -->
+        <h3 class="table__title">Tabla de objetivos de <span class="current__month">Mayo</span></h3>
         <p class="table__subtitle">Estas son tus metas y tus avances hasta el momento</p>
         <!-- Objective Task -->
         <div class="table__objectives">
@@ -122,10 +126,11 @@
                 <p class="task__challenge">Desafío de tareas:</p>
                 <!--! Estado Condicional -->
                 <p class="task__congratulations">¡COMPLETADO!</p>
+                <!--! Estado Condicional y Dinamico para "current__task" -->
+                <p class="task__detail">Realizar <span class="current__task">2</span> tareas en el mes para cumplir este
+                  desafío.</p>
                 <!--! Estado Condicional -->
-                <p class="task__detail">Realizar 2 tareas en el mes para cumplir este desafío.</p>
-                <!--! Estado Condicional -->
-                <p class="task__current">Ya has hecho <span class="task__value">0</span> <span>tarea</span></p>
+                <p class="task__current">Has hecho <span class="task__value">0</span> <span>tarea</span></p>
               </div>
             </div>
             <!-- line -->
@@ -146,7 +151,7 @@
               <!--! Estado Condicional -->
               <p class="buy__title">Meta de compras:</p>
               <!--! Estado Condicional -->
-              <p class="buy__subtitle">Comprar 8 paquetes</p>
+              <p class="buy__subtitle">Comprar <span class="current_buy">8</span> paquetes</p>
               <!--! Estado Condicional -->
               <div class="task__circle">
                 <!--! Estado Condicional -->
@@ -179,7 +184,7 @@
               <!--! Estado Condicional -->
               <p class="oneClick__title">Meta 1C1P:</p>
               <!--! Estado Condicional -->
-              <p class="oneClick__subtitle">Realizar 2 pedidos</p>
+              <p class="oneClick__subtitle">Realizar <span class="current_1C1P">2</span> pedidos</p>
               <!--! Estado Condicional -->
               <div class="task__circle">
                 <!--! Estado Condicional -->
@@ -216,41 +221,41 @@
               <!-- box 1 -->
               <div class="box">
                 <div class="box__img">
-                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
-                  <div><span>X3</span></div>
-                  <p class="box__name">Benson & Hedges</p>
+                  <img src="./assets/img/MLB-14s.jpg" alt="Marlboro 14">
+                  <div><span class="current__goal">X9</span></div>
+                  <p class="box__name">Marlboro 14</p>
                 </div>
               </div>
               <!-- box 2 -->
               <div class="box">
                 <div class="box__img">
-                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
-                  <div><span>X3</span></div>
-                  <p class="box__name">Benson & Hedges</p>
+                  <img src="./assets/img/MLB-20s.jpg" alt="Marlboro 20">
+                  <div><span class="current__goal">X3</span></div>
+                  <p class="box__name">Marlboro 20</p>
                 </div>
               </div>
               <!-- box 3 -->
               <div class="box">
                 <div class="box__img">
-                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
-                  <div><span>X3</span></div>
-                  <p class="box__name">Benson & Hedges</p>
+                  <img src="./assets/img/MLB-Vista-Arctic.jpg" alt="Vista Artic">
+                  <div><span class="current__goal">X3</span></div>
+                  <p class="box__name">Vista Artic</p>
                 </div>
               </div>
               <!-- box 4 -->
               <div class="box">
                 <div class="box__img">
-                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
-                  <div><span>X3</span></div>
-                  <p class="box__name">Benson & Hedges</p>
+                  <img src="./assets/img/MLB-Vista-Blossom.jpg" alt="Vista Blossom">
+                  <div><span class="current__goal">X3</span></div>
+                  <p class="box__name">Vista Blossom</p>
                 </div>
               </div>
               <!-- box 5 -->
               <div class="box">
                 <div class="box__img">
-                  <img src="./assets/img/box-cigarrets.png" alt="cajetilla de cigarros">
-                  <div><span>X3</span></div>
-                  <p class="box__name">Benson & Hedges</p>
+                  <img src="./assets/img/MLB-Vista-Garden.jpg" alt="Vista Garden">
+                  <div><span class="current__goal">X3</span></div>
+                  <p class="box__name">Vista Garden</p>
                 </div>
               </div>
             </div>

@@ -124,7 +124,7 @@
 	background-color: #f3f3f3;
 	border-radius: 5px;
 }
-/*! Clase para el estado CUMPLIDO de la Card */
+/*! Clase para el estado REALIZADO de la Card */
 .box__task-modifier {
 	background-color: #dff4dc;
 }
@@ -142,7 +142,7 @@
 	margin: 10px auto;
 }
 
-/*! Clase para el estado  CUMPLIDO del Circulo del icono */
+/*! Clase para el estado  REALIZADO del Circulo del icono */
 .box__circle-modifier {
 	border-color: var(--end);
 }
@@ -152,17 +152,18 @@
 	fill: var(--gray);
 }
 
-/* El icono de carritos es diferente svg */
+/*! Clase para el estado REALIZADO del Icono  */
+.box__icon-modifier path {
+	fill: var(--end);
+} 
+
+
+/* Clase para el estado NO CUMPLIDO del Icono El icono de carritos es diferente svg */
 .box__icon__car > path {
 	stroke: var(--gray);
 }
 
-/*! Clase para el estado CUMPLIDO del Icono  */
-
-.box__icon-modifier path {
-	fill: var(--end);
-}
-/*! El icono de carritos es diferente svg */
+/*! Clase para el estado REALIZADO del Icono El icono de carritos es diferente svg */
 .box__icon__car-modifier > path {
 	stroke: var(--end);
 }
@@ -178,7 +179,7 @@
 	margin-bottom: 5px;
 }
 
-/*! Clase para el estado CUMPLIDO del Texto */
+/*! Clase para el estado REALIZADO del Texto */
 .box__detail--modifier {
 	color: var(--end);
 }
